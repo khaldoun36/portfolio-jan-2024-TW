@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* importing the locally hosted font */
+@font-face {
+  font-family: "GeistVariableVF";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url("/fonts/GeistVariableVF.woff2") format("woff2");
+}
+
+/* 
+    1. General Styling
+*/
+
+html,
+body,
+#__nuxt {
+  --background-color: #020617;
+
+  font-family: "Geist", system-ui, sans-serif;
+  background-color: var(--background-color);
+  color-scheme: only dark;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "GeistVariableVF", sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+/* 
+    2. Container
+*/
+
+.content-grid {
+  --inline-padding: 1rem;
+  --grid-column-width: 4rem;
+  --grid-gap: 2rem;
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] var(--inline-padding)
+    [content-start] 1fr [content-end] var(--inline-padding)
+    [full-width-end];
+}
+
+.content-grid > :not(.full-width) {
+  grid-column: content;
+}
+
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+
+@media screen and (min-width: 50rem) {
+  .content-grid {
+    --inline-padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .content-grid {
+    grid-template-columns:
+      [full-width-start] 1fr
+      [content-start] repeat(12, minmax(0, var(--grid-column-width)))
+      [content-end] 1fr
+      [full-width-end];
+    column-gap: var(--grid-gap);
+  }
+}
+
+/* 
+    3. Gradient text and background
+*/
+
+.bg-gradient-primary {
+  background: linear-gradient(
+    128deg,
+    theme("colors.secondary.300") 0%,
+    theme("colors.secondary.500") 100%
+  );
+}
+
+.text-gradient-primary {
+  background: linear-gradient(
+    128deg,
+    theme("colors.secondary.300") 0%,
+    theme("colors.secondary.500") 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 
+  4. hide scroll bar
+*/
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
