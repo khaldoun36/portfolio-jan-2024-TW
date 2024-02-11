@@ -1,9 +1,9 @@
 <template>
   <NuxtLink
-    class="transition-colors hover:bg-primary-900 focus:bg-primary-900 focus:outline-none"
+    class="rounded-e-lg transition-colors hover:bg-primary-900 focus:bg-primary-900 focus:outline-none"
   >
     <article
-      class="flex max-w-fit flex-col items-baseline gap-6 rounded-e-lg p-6 md:flex-row"
+      class="flex max-w-fit flex-col items-baseline gap-6 p-6 md:flex-row"
     >
       <time
         datetime="2008-02-14"

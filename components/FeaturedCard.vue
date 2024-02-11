@@ -1,7 +1,7 @@
 <template>
-  <NuxtLink>
+  <NuxtLink class="active:scale-95">
     <article
-      class="featured-card justify-self-stretch overflow-clip rounded-md border border-primary-700 transition-colors hover:border-primary-500 focus:border-primary-500"
+      class="gradient-card featured-card justify-self-stretch overflow-clip rounded-md border border-primary-700 transition-colors hover:border-primary-500 focus:border-primary-500"
     >
       <img
         src="https://images.unsplash.com/photo-1490814525860-594e82bfd34a?q=80&w=2095&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -25,14 +25,6 @@
 <script setup></script>
 
 <style scoped>
-.featured-card {
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
-  background:
-    url(../assets/images/noise.png) repeat,
-    linear-gradient(147deg, var(--slate-800) 17.97%, var(--slate-900) 100%);
-}
-
 .featured-card img {
   mask: linear-gradient(180deg, var(--slate-900) 60%, transparent 100%);
 }

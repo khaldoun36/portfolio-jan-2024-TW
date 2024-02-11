@@ -5,7 +5,7 @@
     <div class="primary-header__layout flex items-center justify-between py-4">
       <Logo class="logo" />
       <nav
-        class="hidden items-center justify-between gap-1 rounded-full border border-primary-700 p-1 md:flex"
+        class="hidden items-center justify-between gap-1 rounded-full border border-primary-700 p-1 lg:flex"
       >
         <NuxtLink
           v-for="link in navigationLinks"
@@ -18,11 +18,12 @@
       <ButtonLink
         to="https://www.youtube.com/watch?v=kHQNK2jU_TQ"
         intent="primary"
+        target="_blank"
         >Let's work together!</ButtonLink
       >
     </div>
     <nav
-      class="full-width content-grid border-t border-primary-700 p-1 md:hidden"
+      class="full-width content-grid border-t border-primary-700 p-1 lg:hidden"
     >
       <div
         class="mobie-nav-layout no-scrollbar flex snap-x items-center justify-between gap-1 overflow-x-scroll py-2"

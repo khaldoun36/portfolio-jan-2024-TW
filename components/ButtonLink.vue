@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :class="twMerge(button({ intent, size }))" target="_blank">
+  <NuxtLink :class="twMerge(button({ intent, size }))">
     <slot />
   </NuxtLink>
 </template>

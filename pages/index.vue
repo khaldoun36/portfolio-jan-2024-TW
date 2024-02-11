@@ -11,6 +11,7 @@
         v-for="link in heroSocialLinks"
         :key="link.id"
         :to="link.link"
+        target="_blank"
         intent="secondary"
       >
         <Icon :name="link.iconAlt" />
