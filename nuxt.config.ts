@@ -28,10 +28,10 @@ export default defineNuxtConfig({
       link: [
         {
           rel: "preload",
-          href: "./public/fonts/GeistVariableVF.woff2",
+          href: "/fonts/GeistVariableVF.woff2",
+          crossorigin: "",
           as: "font",
           type: "font/woff2",
-          crossorigin: "anonymous",
         },
       ],
     },
