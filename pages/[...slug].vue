@@ -27,7 +27,9 @@
         :alt="doc.thumbnailDesc"
         class="rounded-md"
         preset="cover"
-        sizes="100vw sm:50vw md:400px"
+        width="4000"
+        height="3000"
+        sizes="400px sm:100vw lg:60vw"
       />
       <ContentRenderer :value="doc" />
     </ContentDoc>

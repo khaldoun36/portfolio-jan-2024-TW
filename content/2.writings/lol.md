@@ -3,7 +3,7 @@ draft: true
 title: "lol"
 date: 2024-01-01
 description: "Vanilla CSS vs. Tailwind CSS: A Developer's Experiment & Review! ️ Learn about the pros and cons of both approaches through a real-world comparison. Explore code structure, efficiency, and design system benefits. Find out which reigns supreme!"
-thumbnail: "https://images.unsplash.com/photo-1707305311532-73bd64624a07?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+thumbnail: "/images/khaldoon.jpg"
 thumbnailDesc: "a photo of nature"
 slug: "lol"
 ---

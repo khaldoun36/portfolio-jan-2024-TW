@@ -7,6 +7,8 @@
         :src="thumbnail"
         :alt="thumbnailDesc"
         class="aspect-[4/3] h-auto w-full object-cover"
+        width="4000"
+        height="3000"
         sizes="100vw sm:50vw md:400px"
         preset="cover"
       />
