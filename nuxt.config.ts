@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
-      title: "Khaldoo.Dev",
+      title: "Khaldoon.Dev",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -25,8 +25,23 @@ export default defineNuxtConfig({
       ],
     },
   },
+  // my image presets
+  image: {
+    presets: {
+      cover: {
+        modifiers: {
+          fit: "cover",
+          loading: "lazy",
+          format: "webp",
+          width: 300,
+          height: 300,
+          quality: 80,
+        },
+      },
+    },
+  },
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-icon", "@nuxt/image", "@nuxt/content"],
+  modules: ["nuxt-icon", "@nuxt/image", "@nuxt/content", "@nuxtjs/tailwindcss"],
   content: {
     markdown: {
       anchorLinks: false,

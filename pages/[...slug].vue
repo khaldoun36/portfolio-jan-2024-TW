@@ -26,9 +26,7 @@
         :src="doc.thumbnail"
         :alt="doc.thumbnailDesc"
         class="rounded-md"
-        format="webp"
-        loading="lazy"
-        width="2070"
+        preset="cover"
       />
       <ContentRenderer :value="doc" />
     </ContentDoc>

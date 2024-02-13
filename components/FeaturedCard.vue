@@ -7,9 +7,7 @@
         :src="thumbnail"
         :alt="thumbnailDesc"
         class="aspect-[4/3] h-auto w-full object-cover"
-        format="webp"
-        loading="lazy"
-        width="2070"
+        preset="cover"
       />
 
       <div class="flex flex-col items-start justify-between gap-2 p-6">
