@@ -36,10 +36,15 @@ export default defineNuxtConfig({
       ],
     },
   },
-
   // ./global head config
+
   // my image presets
   image: {
+    provider: "imagekit",
+    imagekit: {
+      baseURL: "https://ik.imagekit.io/hl8yxed8gq/",
+    },
+
     presets: {
       cover: {
         modifiers: {

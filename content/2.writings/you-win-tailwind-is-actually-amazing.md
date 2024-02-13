@@ -3,7 +3,7 @@ draft: true
 title: "You win, Tailwind is actually amazing"
 date: 2024-01-01
 description: "Vanilla CSS vs. Tailwind CSS: A Developer's Experiment & Review! ️ Learn about the pros and cons of both approaches through a real-world comparison. Explore code structure, efficiency, and design system benefits. Find out which reigns supreme!"
-thumbnail: "/images/khaldoon.jpg"
+thumbnail: "writings/khaldoon.jpg?updatedAt=1707846837407"
 thumbnailDesc: "a photo of nature"
 slug: "you-win-tailwind-is-actually-amazing"
 lastUpdated: juslt-2024
