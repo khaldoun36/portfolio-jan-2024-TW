@@ -3,10 +3,13 @@
     <article
       class="gradient-card featured-card justify-self-stretch overflow-clip rounded-md border border-primary-700 transition-colors hover:border-primary-500 focus:border-primary-500"
     >
-      <img
+      <NuxtImg
         :src="thumbnail"
         :alt="thumbnailDesc"
         class="aspect-[4/3] h-auto w-full object-cover"
+        format="webp"
+        loading="lazy"
+        width="2070"
       />
 
       <div class="flex flex-col items-start justify-between gap-2 p-6">

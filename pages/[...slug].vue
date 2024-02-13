@@ -1,7 +1,7 @@
 <template>
-  <main class="prose mx-auto max-w-[75ch]">
+  <main class="prose mx-auto max-w-[70ch]">
     <ContentDoc v-slot="{ doc }">
-      <h1 class="text-2xl font-semibold text-primary-50 md:text-3xl">
+      <h1 class="mt-0 text-2xl font-semibold text-primary-50 md:text-3xl">
         {{ doc.title }}
       </h1>
       <div class="flex items-center">
@@ -26,6 +26,9 @@
         :src="doc.thumbnail"
         :alt="doc.thumbnailDesc"
         class="rounded-md"
+        format="webp"
+        loading="lazy"
+        width="2070"
       />
       <ContentRenderer :value="doc" />
     </ContentDoc>
