@@ -52,7 +52,17 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-icon", "@nuxt/image", "@nuxt/content", "@nuxtjs/tailwindcss"],
+  modules: [
+    "nuxt-icon",
+    "@nuxt/image",
+    "@nuxt/content",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/robots",
+  ],
+  robots: {
+    UserAgent: "*",
+    Disallow: "",
+  },
   content: {
     markdown: {
       anchorLinks: false,
