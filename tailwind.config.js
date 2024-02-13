@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require("tailwindcss/colors");
 
+const typographyStyles = require("./util/typography");
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -29,6 +31,10 @@ module.exports = {
       "2xl": ["28px", "36px"],
       "3xl": ["36px", "48px"],
     },
+    typography: typographyStyles,
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // ...
+  ],
 };

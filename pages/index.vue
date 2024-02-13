@@ -26,8 +26,19 @@
     >
       Featured
     </h2>
+
     <div class="grid gap-8 md:grid-cols-2">
-      <FeaturedCard to="https://khaldoon.dev/" v-for="n in 4" :key="n" />
+      <ContentList path="/writings" v-slot="{ list }">
+        <div v-for="article in list" :key="article._path">
+          <FeaturedCard
+            :to="`/writings/${article.slug}`"
+            :title="article.title"
+            :desc="article.description"
+            :thumbnail="article.thumbnail"
+            :thumbnailDesc="article.thumbnailDesc"
+          />
+        </div>
+      </ContentList>
     </div>
   </section>
 </template>
