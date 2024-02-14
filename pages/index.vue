@@ -28,14 +28,17 @@
     </h2>
 
     <div class="grid gap-8 md:grid-cols-2">
-      <ContentList path="/writings" v-slot="{ list }">
-        <div v-for="article in list" :key="article._path">
+      <ContentList path="/posts" v-slot="{ list }">
+        <div
+          v-for="article in list.filter((item) => item.isFeatured).slice(0, 6)"
+          :key="article._path"
+        >
           <FeaturedCard
-            :to="`/writings/${article.slug}`"
+            :to="`/posts/${slugify(article.title)}`"
             :title="article.title"
             :desc="article.description"
-            :thumbnail="article.thumbnail"
-            :thumbnailDesc="article.thumbnailDesc"
+            :thumbnail="article.image.src"
+            :thumbnailDesc="article.image.alt"
           />
         </div>
       </ContentList>
@@ -45,8 +48,13 @@
 
 <script setup>
 import socialLinks from "~/util/socialLinks";
+import slugify from "../util/slugify";
 
 const heroSocialLinks = socialLinks.slice(0, 2);
+
+useHead({
+  title: "Khaldoon.dev",
+});
 </script>
 
 <style scoped></style>

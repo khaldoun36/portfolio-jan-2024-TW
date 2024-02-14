@@ -1,9 +1,7 @@
 <template>
-  <NuxtLink
-    class="rounded-e-lg transition-colors hover:bg-primary-900 focus:bg-primary-900 focus:outline-none"
-  >
+  <NuxtLink>
     <article
-      class="flex max-w-fit flex-col items-baseline gap-6 p-6 md:flex-row"
+      class="flex max-w-fit flex-col items-baseline gap-6 rounded-e-lg p-6 transition-colors hover:bg-primary-900 focus:bg-primary-900 focus:outline-none md:flex-row"
     >
       <time
         datetime="2008-02-14"
@@ -14,13 +12,10 @@
         <h2
           class="max-w-[45ch] text-balance text-xl font-semibold text-primary-50"
         >
-          Building a Design System from scratchL
+          {{ title }}
         </h2>
         <p class="mt-2 max-w-[55ch] text-base text-primary-400">
-          As someone who's always been striving for consistency, building
-          delightful and accessible experiences, and trying to do all that
-          faster than ever, the concept of ✨design systems✨ has always
-          interested me.
+          {{ desc }}
         </p>
         <button class="mt-4 flex items-center gap-1 text-secondary-400">
           <span class="text-base font-semibold">Read more</span>
@@ -31,6 +26,8 @@
   </NuxtLink>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps(["title", "desc"]);
+</script>
 
 <style scoped></style>

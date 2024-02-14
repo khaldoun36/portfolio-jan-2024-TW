@@ -17,14 +17,23 @@
         >
         <div v-if="doc.lastUpdated">
           <span class="px-2 text-secondary-400">&#8212;</span>
-          <span class="text-base font-semibold text-secondary-400">
-            Last Updated {{ doc.lastUpdated }}</span
+          <time
+            class="text-base font-semibold text-secondary-400"
+            :datetime="doc.lastUpdated"
+          >
+            Last Updated
+            {{
+              new Date(doc.lastUpdated).toLocaleDateString("en-us", {
+                year: "numeric",
+                month: "short",
+              })
+            }}</time
           >
         </div>
       </div>
       <NuxtImg
-        :src="doc.thumbnail"
-        :alt="doc.thumbnailDesc"
+        :src="doc.image.src"
+        :alt="doc.image.alt"
         class="rounded-md"
         preset="cover"
         width="4000"
@@ -35,3 +44,5 @@
     </ContentDoc>
   </main>
 </template>
+
+<script setup></script>

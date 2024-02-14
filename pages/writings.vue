@@ -9,15 +9,20 @@
   <section
     class="mt-16 flex flex-col items-start justify-start gap-8 md:border-l md:border-primary-700"
   >
-    <BlogPost
-      v-for="n in 8"
-      :key="n"
-      to="https://spotlight.tailwindui.com/articles"
-    />
+    <ContentList path="/posts" v-slot="{ list }">
+      <div v-for="article in list" :key="article._path">
+        <BlogPost
+          :title="article.title"
+          :desc="article.description"
+          :to="`/posts/${slugify(article.title)}`"
+        />
+      </div>
+    </ContentList>
   </section>
 </template>
 
 <script setup>
+import slugify from "../util/slugify";
 useHead({
   title: "Khaldoon.dev | Writings",
 });

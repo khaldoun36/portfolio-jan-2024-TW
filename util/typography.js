@@ -10,7 +10,7 @@ module.exports = function typographyStyles({ theme }) {
         "--tw-prose-underline-hover": theme("colors.secondary.500"),
         "--tw-prose-bold": theme("colors.zinc.900"),
         "--tw-prose-counters": theme("colors.zinc.900"),
-        "--tw-prose-bullets": theme("colors.zinc.900"),
+        "--tw-prose-bullets": theme("colors.primary.400"),
         "--tw-prose-hr": theme("colors.zinc.100"),
         "--tw-prose-quote-borders": theme("colors.zinc.200"),
         "--tw-prose-captions": theme("colors.zinc.400"),
