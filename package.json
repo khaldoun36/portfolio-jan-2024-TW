@@ -13,7 +13,6 @@
     "@nuxt/content": "^2.12.0",
     "@nuxtjs/robots": "^3.0.0",
     "class-variance-authority": "^0.7.0",
-    "nuxt": "^3.10.0",
     "tailwind-merge": "^2.2.1",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
@@ -23,6 +22,7 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.17",
+    "nuxt": "^3.10.3",
     "nuxt-icon": "^0.6.8",
     "postcss": "^8.4.33",
     "prettier": "^3.2.5",

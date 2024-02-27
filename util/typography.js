@@ -80,7 +80,7 @@ module.exports = function typographyStyles({ theme }) {
           fontWeight: theme("fontWeight.semibold"),
         },
         code: {
-          display: "inline-block",
+          display: "inline",
           color: "var(--tw-prose-code)",
           fontSize: theme("fontSize.sm")[0],
           fontWeight: theme("fontWeight.semibold"),
@@ -157,7 +157,7 @@ module.exports = function typographyStyles({ theme }) {
           backgroundColor: "var(--tw-prose-pre-bg)",
           borderRadius: theme("borderRadius.3xl"),
           padding: theme("spacing.8"),
-          overflowX: "auto",
+          overflowX: "scroll",
           border: "1px solid",
           borderColor: "var(--tw-prose-pre-border)",
         },

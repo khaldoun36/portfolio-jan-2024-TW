@@ -46,3 +46,17 @@
 </template>
 
 <script setup></script>
+
+<style>
+/* pre {
+  max-width: 100% !important;
+
+  overflow-x: auto !important;
+}
+
+pre code {
+  max-width: 100% !important;
+
+  overflow-x: auto !important;
+} */
+</style>
