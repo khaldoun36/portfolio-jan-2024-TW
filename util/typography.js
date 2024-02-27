@@ -157,7 +157,7 @@ module.exports = function typographyStyles({ theme }) {
           backgroundColor: "var(--tw-prose-pre-bg)",
           borderRadius: theme("borderRadius.3xl"),
           padding: theme("spacing.8"),
-          overflowX: "scroll",
+          overflowX: "auto",
           border: "1px solid",
           borderColor: "var(--tw-prose-pre-border)",
         },
