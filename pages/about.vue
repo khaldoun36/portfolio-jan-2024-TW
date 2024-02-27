@@ -21,7 +21,9 @@
         class="aspect-square h-auto max-w-full rounded-md object-cover md:aspect-video lg:aspect-square"
         width="3024"
         height="3024"
-        alt="Image of a person walking in a forest somewhere in Japan."
+        alt="Image of a person standing in a forest somewhere in Japan."
+        sizes="400px sm:100vw lg:60vw"
+        preset="cover"
       />
       <div class="mt-6 hidden flex-col justify-start gap-6 lg:flex">
         <NuxtLink
