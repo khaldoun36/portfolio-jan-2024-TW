@@ -17,10 +17,10 @@
     </main>
     <aside class="order-1 lg:order-2 lg:col-span-2">
       <NuxtImg
-        src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="about-me.jpg?updatedAt=1709022716048"
         class="aspect-square h-auto max-w-full rounded-md object-cover md:aspect-video lg:aspect-square"
-        placeholder
-        format="webp"
+        width="3024"
+        height="3024"
         alt="Image of a person walking in a forest somewhere in Japan."
       />
       <div class="mt-6 hidden flex-col justify-start gap-6 lg:flex">

@@ -1,7 +1,7 @@
 <template>
   <div class="content-grid">
     <PrimaryHeader />
-    <div class="py-20 lg:py-24">
+    <div class="min-h-svh py-20 lg:py-24">
       <NuxtPage />
     </div>
     <PrimaryFooter />

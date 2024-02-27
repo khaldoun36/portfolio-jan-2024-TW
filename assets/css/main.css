@@ -69,6 +69,7 @@ body,
       [content-start] repeat(12, minmax(0, var(--grid-column-width)))
       [content-end] 1fr
       [full-width-end];
+
     column-gap: var(--grid-gap);
   }
 }

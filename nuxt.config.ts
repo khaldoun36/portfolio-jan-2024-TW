@@ -33,6 +33,11 @@ export default defineNuxtConfig({
           as: "font",
           type: "font/woff2",
         },
+        {
+          rel: "icon",
+          type: "image/svg",
+          href: "./favicon.svg",
+        },
       ],
     },
   },
@@ -50,7 +55,7 @@ export default defineNuxtConfig({
         modifiers: {
           fit: "cover",
           loading: "lazy",
-          format: "webp",
+          format: "avif",
         },
       },
     },
@@ -70,6 +75,9 @@ export default defineNuxtConfig({
   content: {
     markdown: {
       anchorLinks: false,
+    },
+    highlight: {
+      theme: "github-dark",
     },
   },
   postcss: {
