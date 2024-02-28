@@ -1,9 +1,7 @@
 <template>
   <main>
-    <h1 class="max-w-[45ch] text-2xl font-semibold text-primary-50 md:text-3xl">
-      Here, I share my experiences as a frontend engineer, designer, and delve
-      into everything I'm learning about software development, design, 3D
-      modeling, and more.
+    <h1 class="max-w-[30ch] text-2xl font-semibold text-primary-50 md:text-3xl">
+      Software I use, gadgets I love, and other things I recommend.
     </h1>
   </main>
   <section
@@ -14,7 +12,6 @@
         <BlogPost
           :title="article.title"
           :desc="article.description"
-          :date="article.date"
           :to="`/posts/${slugify(article.title)}`"
         />
       </div>

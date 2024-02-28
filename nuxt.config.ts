@@ -58,6 +58,15 @@ export default defineNuxtConfig({
           format: "avif",
         },
       },
+      projectIcon: {
+        modifiers: {
+          fit: "cover",
+          loading: "lazy",
+          format: "avif",
+          width: 120,
+          heigt: 120,
+        },
+      },
     },
   },
   css: ["~/assets/css/main.css"],

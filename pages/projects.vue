@@ -8,10 +8,16 @@
   <section
     class="mt-16 grid auto-rows-[360px] gap-8 md:grid-cols-2 lg:grid-cols-3"
   >
-    <ProjectCard v-for="n in 3" :key="n" />
+    <ProjectCard
+      v-for="project in projects"
+      :key="project.projectID"
+      :project="project"
+    />
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import projects from "~/util/projects";
+</script>
 
 <style scoped></style>

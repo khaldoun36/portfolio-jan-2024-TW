@@ -8,12 +8,7 @@
         <time
           class="text-base font-medium text-primary-400"
           :datetime="doc.date"
-          >{{
-            new Date(doc.date).toLocaleDateString("en-us", {
-              year: "numeric",
-              month: "short",
-            })
-          }}</time
+          >{{ formatDate(doc.date) }}</time
         >
         <div v-if="doc.lastUpdated">
           <span class="px-2 text-secondary-400">&#8212;</span>
@@ -45,18 +40,8 @@
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import formatDate from "~/util/formatDate";
+</script>
 
-<style>
-/* pre {
-  max-width: 100% !important;
-
-  overflow-x: auto !important;
-}
-
-pre code {
-  max-width: 100% !important;
-
-  overflow-x: auto !important;
-} */
-</style>
+<style></style>

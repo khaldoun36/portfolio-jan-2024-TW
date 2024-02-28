@@ -5,7 +5,7 @@ const socialLinks = [
     text: "Follow me on Twitter",
     icon: "ph:twitter-logo-fill",
     iconAlt: "ph:twitter-logo",
-    id: 1,
+    id: crypto.randomUUID(),
   },
   {
     link: "https://www.linkedin.com/in/khaldoonalnuaimi/",
@@ -13,19 +13,19 @@ const socialLinks = [
     text: "Follow me on Linkedin",
     icon: "ph:linkedin-logo-fill",
     iconAlt: "ph:linkedin-logo",
-    id: 2,
+    id: crypto.randomUUID(),
   },
   {
     link: "https://github.com/khaldoun36",
     text: "Follow me on Github",
     icon: "ph:github-logo-fill",
-    id: 3,
+    id: crypto.randomUUID(),
   },
   {
     link: "mailto:khaldoun36@gmail.com",
     text: "hello[at]khaldoon.dev",
     icon: "ph:envelope-simple-fill",
-    id: 4,
+    id: crypto.randomUUID(),
   },
 ];
 

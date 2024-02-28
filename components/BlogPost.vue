@@ -6,7 +6,7 @@
       <time
         datetime="2008-02-14"
         class="border-l border-primary-700 pl-4 text-base font-medium text-primary-500 md:border-0 md:pl-0"
-        >April 15, 1996</time
+        >{{ formatDate(date) }}</time
       >
       <div class="flex flex-col items-start">
         <h2
@@ -27,7 +27,8 @@
 </template>
 
 <script setup>
-const props = defineProps(["title", "desc"]);
+import formatDate from "../util/formatDate";
+const props = defineProps(["title", "desc", "date"]);
 </script>
 
 <style scoped></style>
