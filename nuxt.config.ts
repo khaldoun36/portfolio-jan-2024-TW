@@ -63,6 +63,7 @@ export default defineNuxtConfig({
           fit: "cover",
           loading: "lazy",
           format: "avif",
+          alt: "Logo of the described project",
           width: 120,
           heigt: 120,
         },
