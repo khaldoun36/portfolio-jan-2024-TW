@@ -5,7 +5,7 @@ isFeatured: true
 date: 2024-01-01
 # lastUpdated: 2024-02-01
 title: "You win, Tailwind is actually amazing"
-description: "Vanilla CSS vs. Tailwind CSS: A Developer's Experiment & Review! ️ Learn about the pros and cons of both approaches through a real-world comparison. Explore code structure, efficiency, and design system benefits. Find out which reigns supreme!"
+description: "Exploring the Tailwind CSS Debate: My Journey from Skepticism to Embrace"
 image:
   src: "writings/Tailwind(1).png?updatedAt=1710751776346"
   alt: "A dark background with Tailwind text positioned in the middle"
