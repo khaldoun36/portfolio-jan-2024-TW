@@ -36,6 +36,7 @@
           <FeaturedCard
             :to="`/posts/${slugify(article.title)}`"
             :title="article.title"
+            :type="article.type"
             :desc="article.description"
             :thumbnail="article.image.src"
             :thumbnailDesc="article.image.alt"

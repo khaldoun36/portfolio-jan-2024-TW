@@ -1,6 +1,8 @@
 <template>
   <NuxtLink
     :to="project.link"
+    target="_blank"
+    rel="noopener"
     class="gradient-card flex flex-col rounded-md border border-primary-700 p-6 transition-colors hover:border-primary-500 active:scale-95"
   >
     <article class="flex flex-grow flex-col items-start justify-start">
@@ -9,6 +11,7 @@
         :src="project.icon"
         preset="projectIcon"
       />
+
       <h2 class="mt-6 text-xl font-semibold text-primary-50">
         {{ project.name }}
       </h2>

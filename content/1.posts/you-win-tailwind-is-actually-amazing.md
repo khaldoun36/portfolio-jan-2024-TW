@@ -1,4 +1,5 @@
 ---
+type: "Article"
 draft: true
 isFeatured: true
 date: 2024-01-01
@@ -6,8 +7,8 @@ date: 2024-01-01
 title: "You win, Tailwind is actually amazing"
 description: "Vanilla CSS vs. Tailwind CSS: A Developer's Experiment & Review! ️ Learn about the pros and cons of both approaches through a real-world comparison. Explore code structure, efficiency, and design system benefits. Find out which reigns supreme!"
 image:
-  src: "writings/dorian-mongel-PuRFKwR4B2o-unsplash.jpg?updatedAt=1707893302082"
-  alt: "An image showcasing My Page."
+  src: "writings/Tailwind(1).png?updatedAt=1710751776346"
+  alt: "A dark background with Tailwind text positioned in the middle"
 
 head:
   meta:
@@ -45,7 +46,7 @@ This has been my approach until this month: utilizing a minimal CSS reset, adapt
 }
 ```
 
-/n
+<br/>
 
 ```css
 /* Structured code */
@@ -56,15 +57,16 @@ This has been my approach until this month: utilizing a minimal CSS reset, adapt
   display: flex;
   flex-direction: column;
 
-  padding: 24px;
-  max-width: 400px;
+padding: 24px;
+max-width: 400px;
 
-  /************************/
-  /* Other styling code.  */
-  /************************/
+/**********\*\*\*\***********/
+/_ Other styling code. _/
+/**********\*\*\*\***********/
 
-  box-shadow: -4px 10px 26px 0px rgba(0, 0, 0, 0.2);
+box-shadow: -4px 10px 26px 0px rgba(0, 0, 0, 0.2);
 }
+
 ```
 
 ## Using Tailwind CSS
@@ -80,3 +82,7 @@ This has been my approach until this month: utilizing a minimal CSS reset, adapt
 - Using vanilla CSS with Tailwind is genuinely easy. It's as simple as typing a class name in your markup. I still find myself writing plenty of CSS. In general, if I have to reach for the before/after pseudo-elements or write a CSS animation, I just go down to CSS and write it there.
 
 The image above perfectly represents me 😅 I have been a Tailwind CSS hater since its introduction and have dunked on it on Twitter. I have hated the way it bloats your markup, still do, but failed to see the benefits it adds until I forced myself to try it. Tailwind is just a tool, like the countless other web development tools that exist out there. You can use it or ignore it; the choice is yours. Personally, I will start adding Tailwind to all my projects moving forward.
+
+```
+
+```

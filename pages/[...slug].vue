@@ -31,8 +31,6 @@
         :alt="doc.image.alt"
         class="rounded-md"
         preset="cover"
-        width="4000"
-        height="3000"
         sizes="400px sm:100vw lg:60vw"
       />
       <ContentRenderer :value="doc" />

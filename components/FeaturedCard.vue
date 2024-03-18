@@ -6,14 +6,17 @@
       <NuxtImg
         :src="thumbnail"
         :alt="thumbnailDesc"
-        class="aspect-[4/3] h-auto w-full object-cover"
-        width="4000"
-        height="3000"
+        class="h-auto w-full object-cover"
         sizes="400px sm:100vw lg:60vw"
         preset="cover"
       />
 
-      <div class="flex flex-col items-start justify-between gap-2 p-6">
+      <div class="space-y-2 p-6">
+        <p
+          class="mb-3 max-w-fit rounded-md border border-secondary-600/75 bg-secondary-100/10 px-4 py-1 text-xs font-medium tracking-wide text-secondary-300"
+        >
+          {{ type }}
+        </p>
         <h2 class="text-balance text-xl font-semibold text-primary-50">
           {{ title }}
         </h2>
@@ -26,11 +29,17 @@
 </template>
 
 <script setup>
-const props = defineProps(["title", "desc", "thumbnail", "thumbnailDesc"]);
+const props = defineProps([
+  "title",
+  "type",
+  "desc",
+  "thumbnail",
+  "thumbnailDesc",
+]);
 </script>
 
 <style scoped>
-.featured-card img {
+/* .featured-card img {
   mask: linear-gradient(180deg, var(--slate-900) 60%, transparent 100%);
-}
+} */
 </style>

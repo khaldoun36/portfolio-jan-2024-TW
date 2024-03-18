@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  routeRules: {
+    // Homepage pre-rendered at build time
+    "/": { prerender: true },
+  },
   // global head config
   app: {
     head: {
@@ -56,6 +61,8 @@ export default defineNuxtConfig({
           fit: "cover",
           loading: "lazy",
           format: "avif",
+          width: 1110,
+          height: 640,
         },
       },
       projectIcon: {
