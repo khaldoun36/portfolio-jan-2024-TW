@@ -82,7 +82,3 @@ box-shadow: -4px 10px 26px 0px rgba(0, 0, 0, 0.2);
 - Using vanilla CSS with Tailwind is genuinely easy. It's as simple as typing a class name in your markup. I still find myself writing plenty of CSS. In general, if I have to reach for the before/after pseudo-elements or write a CSS animation, I just go down to CSS and write it there.
 
 The image above perfectly represents me 😅 I have been a Tailwind CSS hater since its introduction and have dunked on it on Twitter. I have hated the way it bloats your markup, still do, but failed to see the benefits it adds until I forced myself to try it. Tailwind is just a tool, like the countless other web development tools that exist out there. You can use it or ignore it; the choice is yours. Personally, I will start adding Tailwind to all my projects moving forward.
-
-```
-
-```
