@@ -61,8 +61,6 @@ export default defineNuxtConfig({
           fit: "cover",
           loading: "lazy",
           format: "avif",
-          width: 1110,
-          height: 640,
         },
       },
       projectIcon: {

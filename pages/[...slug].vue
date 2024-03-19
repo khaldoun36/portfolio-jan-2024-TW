@@ -30,8 +30,10 @@
         :src="doc.image.src"
         :alt="doc.image.alt"
         class="rounded-md"
-        preset="cover"
+        width="1110"
+        height="640"
         sizes="400px sm:100vw lg:60vw"
+        preset="cover"
       />
       <ContentRenderer :value="doc" />
     </ContentDoc>

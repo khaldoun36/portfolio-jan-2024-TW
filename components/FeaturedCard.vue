@@ -7,6 +7,8 @@
         :src="thumbnail"
         :alt="thumbnailDesc"
         class="h-auto w-full object-cover"
+        width="1110"
+        height="640"
         sizes="400px sm:100vw lg:60vw"
         preset="cover"
       />
