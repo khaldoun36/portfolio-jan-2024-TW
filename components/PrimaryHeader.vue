@@ -16,7 +16,7 @@
         >
       </nav>
       <ButtonLink
-        to="https://www.youtube.com/watch?v=kHQNK2jU_TQ"
+        to="https://www.theverge.com/"
         intent="primary"
         target="_blank"
         >Let's work together!</ButtonLink
